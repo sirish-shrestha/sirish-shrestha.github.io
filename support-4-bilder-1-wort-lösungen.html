@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width'>
+      <title>Support - 4 Bilder 1 Wort Lösungen</title>
+       <style type="text/css">
+            .hiddenMail { color: #1100BB; cursor: pointer;}
+            .hiddenMail:link { color: #1100BB; }
+       </style>
+      <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+      </script>
+      <style> 
+      	body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin:0; color:#666; }
+      	h2{ background:linear-gradient(40deg,#45cafc,#303f9f); color:#fff; box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19); padding:20px; margin:0}
+      	.main {padding: 20px 30px;}
+      	.title{color: #303f9f; font-weight: bold;}
+      </style> 
+    </head>
+    <body>
+    <h2>Support - 4 Bilder 1 Wort Lösungen</h2> 
+    			<div class="main">
+    			  <p>
+              Wenn Sie Probleme bei der Verwendung dieser App haben oder Vorschläge und Feedback einreichen möchten, kontaktieren Sie uns bitte per E-Mail:
+              <a class="hiddenMail" data-email="sirishATpictures-of-nepalDOTcom">
+                  E-Mail anzeigen
+              </a>
+            </p> 
+          </div>
+          <script language="javascript">
+          $(window).load(function () {
+            $('.hiddenMail').on('click',function(event)
+              {
+                  event.preventDefault();
+                  $(this).off("click");
+                  var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+                  $(this).removeClass("hiddenMail");
+                  $(this).html(email);
+                  $(this).attr("href","mailto:"+email);
+              });
+            });
+          </script>
+    </body>
+    </html>
